@@ -1,5 +1,5 @@
 body{
-    background-image: url('/assets/python.jpg');
+    background-image: url('./assets/python.jpg');
     background-size: cover;
 }
 .main-row{
