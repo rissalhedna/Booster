@@ -15,7 +15,7 @@
   </head>
   <body>
     <nav class="bg-light text-light pt-3 pb-3 pl-4">
-      <img src="./assets/Logo.png" width="100px" alt="barmijly-logo" />
+      <img src="./assets/Logo.png" width="120px" alt="barmijly-logo" />
     </nav>
     <div class="fluid-container">
       <div class="container">
@@ -23,62 +23,51 @@
           <!-- <div class="col"></div> -->
           <div class="col-12 col-lg-6">
             <form
-              class="form-container"
               action="https://getform.io/f/0fe834a6-bc62-4bd9-9ef7-16480b9bc93e"
-              method="post"
+              method="POST"
+              class="d-flex flex-column align-items-center form-container"
             >
-              <p class="text-light h2 title">Join the Python course!</p>
-              <p class="description text-light mb-4">
-                We will contact the first 50 participants to give them
-                information about the next steps
+              <span class="h2 text-white">Welcome to Booster!</span>
+              <p class="text-muted desc">
+                Are you an investor looking for businesses to support? or are
+                you a small business owner looking for funding? In both cases
+                Booster is here to help you! Register your contact information
+                and we will reach out to you once our Web app is running!
               </p>
-              <div class="form-group">
-                <label class="ml-1 h5 text-light heading">Name</label>
-                <input
-                  required
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  placeholder="Enter your name"
-                />
-                <label class="mt-3 ml-1 h5 text-light heading">Email</label>
-                <input
-                  required
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div class="form-group">
-                <label class="ml-1 h5 text-light heading">Level of study</label>
-                <select class="form-control" name="study-level">
-                  <option>Middle school</option>
-                  <option>High school</option>
-                  <option>University</option>
-                  <option>Employed</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="ml-1 h5 text-light heading"
-                  >Programming experience</label
-                >
-                <select class="form-control" name="programming-experience">
-                  <option>Less than 1 year</option>
-                  <option>1-2 years</option>
-                  <option>3-5 years</option>
-                  <option>More than 5 years</option>
-                </select>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-primary mt-2 font-weight-bold"
-              >
-                Register
-              </button>
+              <span class="text-white mb-1 h5 left">Name</span>
+              <input required class="mb-2" type="text" name="name" />
+              <span class="text-white mb-1 h5 left">Email</span>
+              <input required class="mb-2" type="email" name="email" />
+              <span class="text-white mb-1 h5 left">City</span>
+              <input required class="mb-2" type="text" name="message" />
 
-              <div class="form-group"></div>
+              <!-- radio button handle -->
+              <div class="left">
+                <div class="text-white mb-2 mt-3">Are you a(n):</div>
+                <div class="radio">
+                  <input
+                    class="radio-elmnt"
+                    type="radio"
+                    name="gender"
+                    value="investor"
+                    checked
+                  />
+                  <div class="text-white">Investor</div>
+                </div>
+                <div class="radio">
+                  <input
+                    class="radio-elmnt"
+                    type="radio"
+                    name="gender"
+                    value="business"
+                  />
+                  <div class="text-white">Business owner</div>
+                </div>
+              </div>
+
+              <button class="bg-success text-white btn mt-4" type="submit">
+                Boost!
+              </button>
             </form>
           </div>
           <!-- <div class="col"></div> -->
@@ -91,7 +80,7 @@
       <span class="mr-2">Made with</span>
       <img src="./assets/heart.png" width="20px" alt="barmijly-logo" />
       <span class="ml-2 mr-3">by</span>
-      <img src="./assets/Logo2.png" width="100px" alt="barmijly-logo" />
+      <img src="./assets/Logo2.png" width="120px" alt="barmijly-logo" />
     </footer>
   </body>
   <script
